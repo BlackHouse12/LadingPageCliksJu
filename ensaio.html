@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CliksJu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+>    
+    <!-- All CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <div>
+    <a class="whatsapp-link" href="https://wa.me/message/76DWTW2AJVYEJ1" target="_blank" >
+      <img src="image/whatsapp-icon-transparent-free-png.webp" width="60px" >
+  </div>
+        
+    </a>
+    <!-- section nav -->
+    <nav class="navbar nav-edit navbar-expand-lg navbar-light bg-light  ">
+      <div class="orange-bar"></div> <!-- Elemento adicional para a barra laranja -->
+        <div class="container">
+          <a href="index.html" onclick="scrollToTop()">
+            <img id="logo-inicio" class= logo-image src="Logo.png" alt="Logo">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gestante.html">Gestantes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bebe.html">Bebês</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="batizado.html">Batizados</a>
+              </li>        
+              <li class="nav-item">
+                <a class="nav-link" href="aniversario.html">Aniversários</a>
+              </li>        
+              <li class="nav-item">
+                <a class="nav-link" href="ensaio.html">Ensaios</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="pet.html">Pet</a>
+              </li>   
+              <li class="nav-item">
+                <button class="button-contato" onclick="scrollToFooter()">Contato</button>
+              </li>
+   
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+  
+
+
+        <title>Galeria</title>
+        <style>
+          
+      
+          .container-destaque {
+            width: 70%;
+            margin: 0 auto;
+            padding: 20px;
+          }
+      
+          .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 5px;
+            
+          }
+      
+          .gallery-item {
+            flex-basis: calc(50% - 10px); /* 50% width for the first row */
+            margin: 5px;
+          }
+      
+          .gallery-item:nth-child(3),
+          .gallery-item:nth-child(4),
+          .gallery-item:nth-child(5) {
+            flex-basis: calc(33.33% - 10px); /* 33.33% width for the second row */
+          }
+      
+          .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+      
+          .aspect-ratio-box {
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%; /* 1:1 aspect ratio (square) */
+          }
+      
+          .aspect-ratio-box img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+      
+          @media (max-width: 768px) {
+            .container {
+              width: 90%; /* Adjust the width for smaller screens */
+            }
+      
+            .gallery-item {
+              flex-basis: calc(50% - 10px); /* 50% width for all rows on smaller screens */
+            }
+      
+            .gallery-item:nth-child(3),
+            .gallery-item:nth-child(4),
+            .gallery-item:nth-child(5) {
+              flex-basis: calc(50% - 10px); /* 50% width for the second row on smaller screens */
+            }
+          }
+        </style>
+     
+    
+        <div class="container-destaque">
+          <h2 class="gallery-title">Ensaios</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <div class="aspect-ratio-box">
+                <img src="image/Ensaio/Ananda-23.jpg" alt="Foto 1">
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="aspect-ratio-box">
+                <img src="image/Ensaio/Ananda-4.jpg" alt="Foto 2">
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="aspect-ratio-box">
+                <img src="image/Ensaio/Ananda-9.jpg" alt="Foto 3">
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="aspect-ratio-box">
+                <img src="image/Ensaio/IMG_1941-Editar.jpg"alt="Foto 4">
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="aspect-ratio-box">
+                <img src="image/Ensaio/IMG_1951-Editar.jpg"alt="Foto 5">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer starts -->
+        <footer id="footer" class="footer-container">
+          <div class="coluna">
+            <img class="logo-footer" src="image/footer.png" alt="Logo">
+          </div>
+          <div class="coluna">
+            <h4>Contato</h4>
+            <p><i class="fab fa-whatsapp"></i> Telefone: (75) 9 9112-4456</p>
+    <p><i class="far fa-envelope"></i> cliksju@gmail.com</p>
+    <p><i class="fas fa-map-marker-alt"></i> Rua Juiz de Fora, 320, Caseb, Feira de Santana - Bahia, CEP 44052-072.</p>
+          </div>
+          <div class="coluna">
+            <h4>Mapa do site</h4>
+            <a href="#about" class="link-sem-decoracao">Sobre nós</a>
+            <a href="#cate" class="link-sem-decoracao">Categorias</a>
+            <a href="#pet" class="link-sem-decoracao">Pet</a>
+            <a href="#portfolio" class="link-sem-decoracao">Portifólios</a>  
+          </div>
+          <div class="coluna">
+            <h4>Redes Sociais</h4>
+            <ul>
+              <li><a href="https://www.instagram.com/cliksju/" target="_blank"><i class="fab fa-instagram" ></i> Instagram</a></li>
+              <li><a href="https://safebrowsing.google.com/" target="_blank"><i class="material-icons">security</i>safe browsing<br> Google</a></li>
+  
+            </ul>
+          </div>
+          <div>
+            <p style="color: white;">&copy; 2023 Todos os direitos reservados.</p>
+          </div>
+        </footer>
+        
+        
+        
+      <!-- footer ends -->
+  
+    
+    
+    <!-- All Js -->
+    <script>
+      function scrollToFooter() {
+        const footer = document.getElementById("footer");
+        footer.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+  </html>

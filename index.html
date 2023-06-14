@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CliksJu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+>   <link rel="icon" href="image/icon.png" type="image/x-icon">
+
+    <!-- All CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <div>
+    <a class="whatsapp-link" href="https://wa.me/message/76DWTW2AJVYEJ1" target="_blank" >
+      <img src="image/whatsapp-icon-transparent-free-png.webp" width="60px" >
+  </div>
+        
+    </a>
+    <!-- section nav -->
+    <nav class="navbar nav-edit navbar-expand-lg navbar-light bg-light  ">
+      <div class="orange-bar"></div> <!-- Elemento adicional para a barra laranja -->
+        <div class="container">
+          <a href="index.html" onclick="scrollToTop()">
+            <img id="logo-inicio" class= logo-image src="Logo.png" alt="Logo">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gestante.html">Gestantes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bebe.html">Bebês</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="batizado.html">Batizados</a>
+              </li>        
+              <li class="nav-item">
+                <a class="nav-link" href="aniversario.html">Aniversários</a>
+              </li>        
+              <li class="nav-item">
+                <a class="nav-link" href="ensaio.html">Ensaios</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="pet.html">Pet</a>
+              </li>   
+              <li class="nav-item">
+                <button class="button-contato" onclick="scrollToFooter()">Contato</button>
+              </li>
+   
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <section>
+        <div class="banner-wrapper">
+          <a href="bebe.html">
+            <img id="img-edit" alt="..." class="banner-img img-fluid" src="image/Banner 01.jpg">
+            <div class="banner-text">
+              <!-- Conteúdo do banner -->
+            </div>
+          </a>
+        </div>
+      </section>
+      
+      <!--Banner Principal 
+      <section>
+        <a href="#">
+          <img id="img-edit" alt="..." class="banner-img img-fluid" src="image/Banner 01.png">
+        </a>
+      </section>
+-->
+      <!--section Sobre nós-->
+      <section id="about" class="about section-padding">
+        <div class="container-about">
+            <div class="row">
+                <div class="col">
+                    <div class="about-img">
+                        <img class="col-lg-8 smaller-image" src="image/SobreNos_img.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-md-12 ps-lg-5 mt-md-5">
+                    <div class="about-text">
+                        <h2 style="font-size: 34px;">Sobre nós</h2>
+                        <p style="font-size: 16px;">Somos um casal de fotógrafos, realizamos ensaios em estúdio, ensaios externos, aniversários infantis e debutantes, batizados e registramos eventos corporativos.
+                            <br>
+                            <br>Ahh, não podemos esquecer dos ensaios Pet.<br></p>
+                        <!-- <a href="#" class="btn custom-button">Saiba mais</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+      <!-- section galeria -->
+
+        <title>Galeria</title>
+        <style>
+          
+      
+          .container-destaque {
+            width: 70%;
+            margin: 0 auto;
+            padding: 20px;
+          }
+      
+          .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 5px;
+            
+          }
+      
+          .gallery-item {
+            flex-basis: calc(50% - 10px); /* 50% width for the first row */
+            margin: 5px;
+          }
+      
+          .gallery-item:nth-child(3),
+          .gallery-item:nth-child(4),
+          .gallery-item:nth-child(5) {
+            flex-basis: calc(33.33% - 10px); /* 33.33% width for the second row */
+          }
+      
+          .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+      
+          .aspect-ratio-box {
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%; /* 1:1 aspect ratio (square) */
+          }
+      
+          .aspect-ratio-box img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+      
+          @media (max-width: 768px) {
+            .container {
+              width: 90%; /* Adjust the width for smaller screens */
+            }
+      
+            .gallery-item {
+              flex-basis: calc(50% - 10px); /* 50% width for all rows on smaller screens */
+            }
+      
+            .gallery-item:nth-child(3),
+            .gallery-item:nth-child(4),
+            .gallery-item:nth-child(5) {
+              flex-basis: calc(50% - 10px); /* 50% width for the second row on smaller screens */
+            }
+          }
+        </style>
+     
+    
+        <div class="container-destaque">
+          <h2 class="gallery-title" style="font-size: 34px;">Destaques</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <div class="aspect-ratio-box">
+                <img src="image/img6.png" alt="Foto 1">
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="aspect-ratio-box">
+                <img src="image/img7.png" alt="Foto 2">
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="aspect-ratio-box">
+                <img src="image/img8.png" alt="Foto 3">
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="aspect-ratio-box">
+                <img src="image/img9.png"alt="Foto 4">
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="aspect-ratio-box">
+                <img src="image/img10.png"alt="Foto 5">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      <!-- section Categoria-->
+      <section class="services section-padding" id="cate">
+          <div class="container">
+              <div class="row">
+                      <div class="section-header text-center pb-5">
+                          <h2 class="titulo-categoria" style="font-size: 34px;">Categorias</h2>
+                      </div>
+                  </div>
+              </div>
+              <div id="Gestante" class="clearfix">
+                <div class="row">
+                  <div class="col-md-12">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <img src="image/img1.png" class="img-fluid" alt="..." style="max-width: 100%;">
+                  </div>
+                  <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h3 class="subtitulo-categoria">Gestantes</h3>
+
+                    <p class="text-justify" style="font-size: 12px;">        
+                      Um momento divino e tão especial merece lembranças criadas com muito carinho. Faremos as fotos do seu ensaio personalizado. Pensaremos cada detalhe juntos: melhor local, sua casa, num parque,
+                       numa praça, praia, no nosso estúdio, onde desejar.</p>
+                      
+                       <p class="text-justify" style="font-size: 12px;">        
+                        Entre 28 e 34 semanas da gestação é o período ideal para o ensaio, sua barriga estará bem bonita, seu corpo estará transformado e com aquele barrigão bem redondinho.
+
+                    </p>
+                    <a href="gestante.html"
+                     class="btn-categoria btn-primary mt-3 btn-responsive" target="_blank">Saiba Mais</a>
+
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="clearfix">
+                <div class="row">
+                  <div class="col-md-12">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3 order-md-2">
+                    <img src="image/img2.png" class="img-fluid" alt="..." style="max-width: 100%;">
+                  </div>
+                  <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <div>
+                      <h3 class="subtitulo-categoria-left">Bebês</h3>
+
+                      <p class="text-justify-secundario" style="font-size: 12px;">
+                        Bebês são verdadeiras bênçãos que transbordam amor e pureza, e são capazes de trazer muita felicidade para todos ao seu redor. Por isso, 
+                        é muito importante guardar recordações dessa época tão importante e especial. Pensando nisso, te convidamos para realizar este registro tão importante que alegrará para sempre a sua família.
+
+                      </p>
+                    </div>
+                    <a href="bebe.html" 
+                    class="btn-categoria btn-primary mt-3 btn-responsive" target="_blank">Saiba Mais</a>
+          
+                      </div>
+                </div>
+              </div>
+              
+              
+
+              <div class="clearfix">
+                <div class="row">
+                  <div class="col-md-12">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <img src="image/img3.jpg" class="img-fluid" alt="..." style="max-width: 100%;">
+                  </div>
+                  <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h3 class="subtitulo-categoria">Batizados</h3>
+
+                    <p class="text-justify" style="font-size: 12px;">
+                      Ter registrado em fotos o dia do batizado seu filho ou afilhado é muito importante, pois além do desenvolvimento da fé e das descobertas do 
+                      batizado toda a família poderá reviver esse momento tão lindo enquanto veem  seus álbuns de fotos antigas.
+
+                    </p>
+                    <a href="batizado.html" 
+                    class="btn-categoria btn-primary mt-3 btn-responsive" target="_blank">Saiba Mais</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="clearfix">
+                <div class="row">
+                  <div class="col-md-12">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3 order-md-2">
+                    <img src="image/img4.jpg" class="img-fluid" alt="..." style="max-width: 100%;">
+                  </div>
+                  <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <div>
+                      <h3 class="subtitulo-categoria-left">Aniversários</h3>
+
+                      <p class="text-justify-secundario" style="font-size: 12px;">                        Um momento marcante e inesquecível é a festa de aniversário, seja o seu dia ou o dia daquelas pessoas que você ama. Da escolha do tema da festa aos detalhes da decoração, cada ponto é pensado com muito carinho. E após a realização do grande sonho, a certeza é que as grandes lembranças de cada instante, cada sorriso... serão eternizados. A fotografia eterniza momentos mágicos, onde os pais, familiares
+                         e amigos poderão resgatar as imagens apaixonantes, cada vez que apreciarem as fotos do aniversário.
+                      </p>
+                    </div>
+                    <a href="aniversario.html" 
+                    class="btn-categoria btn-primary mt-3 btn-responsive" target="_blank">Saiba Mais</a>
+                  </div>
+                </div>
+              </div>
+              
+
+          <div class="clearfix">
+            <div class="row">
+              <div class="col-md-12">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <img src="image/Ensaio_img.jpg" class="img-fluid" alt="..." style="max-width: 100%;">
+              </div>
+              <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h3 class="subtitulo-categoria">Ensaios</h3>
+
+                <p class="text-justify" style="font-size: 12px;">
+                  Precisando atualizar a foto do seu feed? Garantir imagens bem composta e dar um tapa no visual das suas redes sociais, seja por motivo motivos profissionais ou apenas para seu bem estar.
+                </P>
+                <p class="text-justify" style="font-size: 12px;">
+                  O tempo passa tão depressa que não nos damos conta. Quando percebemos já fizemos 15, 16 e até 18. E aí? Fizemos aquele ensaio ou deixamos passar?  Pois é, simplesmente deixamos passar em branco por correria ou por achar que existem outras coisas mais importantes.
+
+                </p>
+                <a href="ensaio.html" 
+                class="btn-categoria btn-primary mt-3 btn-responsive" target="_blank">Saiba Mais</a>
+              </div>
+            </div>
+          </div>
+      </section> 
+
+
+
+      <!-- services section pet -->
+      <section id="pet" class="about section-padding black-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="about-text-pet">
+                      <h2 style="font-weight: bold;">Pet</h2>
+                      <p>As fotos de Pets surgiram do amor e da paixão que temos por animais de estimação.
+                        Sabemos que os pets são parte importante das nossas vidas e queremos capturar a felicidade e alegria espalhada por toda família.  
+                       </p>
+    
+                        <p>Proporcionamos uma experiência alegre e divertida para os tutores, onde eles podem desfrutar de um momento especial ao lado de seus queridos amigos de quatro patas. 
+                        </p>
+
+                        <p>
+                          Através das nossas fotografias, esses momentos serão eternizados, para que você possa revivê-los e compartilhá-los com as gerações futuras. Venha criar memórias inesquecíveis com seu pet!
+
+                        </p>
+                    </div>
+                    <a href="https://www.instagram.com/cliksjupet/" target="_blank" class="btn custom-button" style="margin-top: 10px;">Saiba mais</a>
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="about-img">
+                        <img src="image/imagePet.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+      <!-- galeria -->
+      <section class="galery-container-section">
+        <div class="galery-container" > 
+
+          <div class="filho">
+            <h1 style="font-size: 34px; text-transform: capitalize; font-weight: 700;">Instagram</h1>
+      
+            <div class="neto" >
+              <a href="https://www.instagram.com/cliksju/"class="image" target="_blank"><img src="image/insta1.jpg" alt=""></a>
+              <a href="https://www.instagram.com/cliksju/"class="image" target="_blank"><img src="image/insta2.jpg"  alt=""></a>
+              <a href="https://www.instagram.com/cliksju/"class="image" target="_blank"><img src="image/insta3.jpg" alt=""></a>
+              <a href="https://www.instagram.com/cliksju/"class="image" target="_blank"><img src="image/insta4.jpg" alt=""></a>
+              <a href="https://www.instagram.com/cliksju/"class="image" target="_blank"><img src="image/insta5.jpg"  alt=""></a>
+              <a href="https://www.instagram.com/cliksju/"class="image" target="_blank"><img src="image/insta6.jpg"  alt=""></a>
+              <a href="https://www.instagram.com/cliksju/"class="image" target="_blank"><img src="image/insta7.jpg" alt=""></a>
+              <a href="https://www.instagram.com/cliksju/"class="image" target="_blank"><img src="image/insta8.jpg"  alt=""></a>
+  
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+      <!-- portfolio ends -->
+
+      <style>
+
+        .container-portfolio {
+            margin-top: 60px; /* Defina o espaçamento desejado aqui */
+          }
+        .gallery2 {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+    
+        .gallery2 img {
+          width: calc(33.33% - 20px);
+          height: auto;
+          margin: 10px;
+        }
+    
+        .gallery2 img:nth-last-child(-n+2) {
+          width: calc(50% - 20px);
+        }
+    
+        @media screen and (max-width: 768px) {
+          .gallery2 img {
+            width: calc(50% - 20px);
+          }
+        }
+    
+        @media screen and (max-width: 480px) {
+          .gallery2 img {
+            width: 100%;
+          }
+        }
+        h1 {
+      text-align: center;
+    }
+    
+      </style>
+      <section id="portfolio"class="container-portfolio">
+
+<h1 style="font-weight: bold; font-size: 34px;">Portifólio</h1>
+
+        <div class="gallery2">
+          <img src="image/port1.jpg" alt="Foto 1">
+          <img src="image/port2.jpg" alt="Foto 2">
+          <img src="image/port3.jpg" alt="Foto 3">
+          <img src="image/port4.jpg" alt="Foto 4">
+          <img src="image/port5.jpg" alt="Foto 5">
+        </div>  
+        
+     </section>
+      
+      <!-- team ends -->
+      
+
+
+
+
+
+      <!-- footer starts -->
+      <footer id="footer" class="footer-container">
+        <div class="coluna">
+          <img class="logo-footer" src="image/footer.png" alt="Logo">
+        </div>
+        <div class="coluna">
+          <h4>Contato</h4>
+          <p><i class="fab fa-whatsapp"></i> Telefone: (75) 9 9112-4456</p>
+  <p><i class="far fa-envelope"></i> cliksju@gmail.com</p>
+  <p><i class="fas fa-map-marker-alt"></i> Rua Juiz de Fora, 320, Caseb, Feira de Santana - Bahia, CEP 44052-072.</p>
+        </div>
+        <div class="coluna">
+          <h4>Mapa do site</h4>
+          <a href="#about" class="link-sem-decoracao">Sobre nós</a>
+          <a href="#cate" class="link-sem-decoracao">Categorias</a>
+          <a href="#pet" class="link-sem-decoracao">Pet</a>
+          <a href="#portfolio" class="link-sem-decoracao">Portifólios</a>  
+        </div>
+        <div class="coluna">
+          <h4>Redes Sociais</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/cliksju/" target="_blank"><i class="fab fa-instagram" ></i> Instagram</a></li>
+            <li><a href="https://safebrowsing.google.com/" target="_blank"><i class="material-icons">security</i>safe browsing<br> Google</a></li>
+
+          </ul>
+        </div>
+        <div>
+          <p style="color: white;">&copy; 2023 Todos os direitos reservados.</p>
+        </div>
+      </footer>
+      
+      
+      
+    <!-- footer ends -->
+
+  
+  
+  <!-- All Js -->
+  <script>
+    function scrollToFooter() {
+      const footer = document.getElementById("footer");
+      footer.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
